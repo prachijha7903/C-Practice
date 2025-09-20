@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+float CalculatePercent(int a,int b,int c);
+
+int main(){
+    int M,S,San;
+    printf("Enter the marks of Maths, Science and Sanskrit: ");
+    scanf("%d %d %d",&M,&S,&San);
+
+    float Percentage = CalculatePercent(M,S,San);
+    printf("%f",Percentage);
+    return 0;
+}
+
+float CalculatePercent(int a, int b , int c){
+        int total = a+b+c;
+        int Per = total/3;
+        return Per;
+}
