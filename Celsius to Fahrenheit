@@ -1,0 +1,16 @@
+#include<stdio.h>
+int celciustofah(int n);
+
+int main(){
+    int n;
+    printf("Enter the value of Temperature in celcius: ");
+    scanf("%d",&n);
+    celciustofah(n);
+    printf("The value of %d is %dF in fahrenheight",n,celciustofah(n));                  
+
+    return 0;
+}
+int celciustofah(int n){
+    int F=(n*(9.0/5.0))+32;
+    return F;
+}
