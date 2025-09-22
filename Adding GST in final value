@@ -1,0 +1,15 @@
+#include<stdio.h>
+float addGST(int n);
+
+int main(){
+    int value;
+    printf("ENter the value of the item: ");
+    scanf("%d",&value);
+    addGST(value);
+
+    return 0;
+}
+float addGST(int n){
+    float totalvalue = n+(0.18*n);
+    printf("The total value of item after adding Gst will be :%f",totalvalue);
+}
