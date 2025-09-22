@@ -1,0 +1,16 @@
+#include<stdio.h>
+void Table(int n);
+int main() {
+    int n;
+    printf("ENter the table:");
+    scanf("%d",&n);
+    Table(n);
+
+    return 0;
+}
+void Table(int n){
+    int i;
+    for(i=n;i<=n*10;i=i+n){
+        printf("%d\n",i);
+    }
+}
