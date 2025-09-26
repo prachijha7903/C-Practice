@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+    int a;
+    printf("ENter the number: ");
+    scanf("%d",&a);
+    if(a%2==0){
+        goto even;
+    }
+    else{
+        goto odd;
+    }
+    even:
+    printf("No is even \n");
+    return 0;
+
+    odd:
+    printf("No is odd \n");
+
+    return 0;
+
+}
