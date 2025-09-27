@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    int n;
+    do{
+       printf("Enter the number: ");
+       scanf("%d",&n);
+       if(n%2!=0){
+        break;
+       }
+    }while(1);
+    printf("Loop ended as you have entered %d which is an odd number ");
+    return 0;
+}
