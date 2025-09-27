@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int marks;
+    printf("ENter the marks of student in 100: ");
+    scanf("%d",&marks);
+
+  if(marks>=30 && marks<=100){
+        printf("Pass\n");
+        printf("Congratulations");
+    }else if(marks<=30 && marks>=0){
+        printf("Fail \nNeed improvement");
+    }else{
+        printf("Wrong marks Entered,\nPlease Check :)");
+    }
+    return 0;
+}
