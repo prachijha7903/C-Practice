@@ -1,0 +1,12 @@
+#include<stdio.h>
+void printAddress(int *ptr);
+
+int main(){
+    int n=6;
+    printf("%u\n",&n);
+    printAddress(&n);
+    return 0;
+}
+void printAddress(int *ptr){
+    printf("%u",ptr);
+}
