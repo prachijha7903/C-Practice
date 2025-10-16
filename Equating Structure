@@ -1,0 +1,26 @@
+#include<stdio.h>    
+#include<string.h>
+
+typedef struct student{
+    char name[30];
+    int roll;
+    float cgpa;
+}S;
+
+int main(){
+    S s1,s2,s3;
+    strcpy(s1.name,"Keshav");
+    s1.roll = 7;                    
+    s1.cgpa = 9.1;
+
+  s2 = s1 ;            //Feature of Structure
+    strcpy(s2.name,"Madhav");
+
+  printf("%s\n",s1.name);
+    printf("%d\n",s1.roll);
+    printf("%2f\n",s1.cgpa);
+    printf("%s\n",s2.name);
+    printf("%d\n",s2.roll);
+    printf("%2f\n",s2.cgpa);
+    return 0;
+}
