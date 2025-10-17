@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("Enter the character as per day (M,T,W,t,f,s,S): ");
+    scanf("%c",&ch);
+
+  switch(ch){
+        case 'M':printf("Monday");
+                 break;
+        case 'T':printf("Tuesday");
+                break;
+        case 'W': printf("Wednesday");
+                 break;
+        case 't':printf("Thursday");
+                 break;
+        case 'f': printf("Friday");
+                 break;
+        case 's': printf("Saturday");
+                 break;
+        case 'S': printf("Sunday");
+                 break;
+        default: printf("You entered wrong day");
+    }
+    
+    return 0;
+}
