@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main(){
+    int arr[5],product;
+    for(int i=0;i<5;i++){
+        printf("Enter the %d index: ",i);
+        scanf("%d",&arr[i]);
+    }
+    product = 1;
+    for(int i=0;i<5;i++){
+        if(arr[i]%2!=0){
+            product = product * arr[i];
+        }
+    }
+    printf("THe product of odd array elements will be %d",product);
+    return 0;
+}
