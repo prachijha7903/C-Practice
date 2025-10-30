@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main(){
+    int arr[5],sum;
+    for(int i=0;i<5;i++){
+        printf("Enter the %d index: ",i);
+        scanf("%d",&arr[i]);
+    }
+    sum = 0;
+    for(int i=0;i<5;i++){
+        if(arr[i]%2==0){
+             sum = sum + arr[i];
+        }
+    }
+    printf("The sum of even array elemets will be :%d ",sum);
+    return 0;
+}
