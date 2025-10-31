@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<string.h>
+
+void printNewpass(char str[]);
+
+int main(){
+    char pass[100];
+    printf("Enter password: ");
+    fgets(pass,100,stdin);
+    printNewpass(pass);
+    return 0;
+}
+void printNewpass(char str[]){
+    char salt[] = "123";
+    char Newpass[100];
+    strcpy(Newpass,str);   // Newpass = str = pass
+    strcat(Newpass,salt);    // Newpass = pass+salt;
+    printf("%s",Newpass);
+}
