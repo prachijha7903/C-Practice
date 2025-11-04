@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<string.h>
+
+struct student {
+    char *name;
+    int roll;
+    float percentile;
+};
+
+int main(){
+    struct student S1[3];           
+
+  strcpy(S1[0].name,"Keshav");
+    S1[0].roll = 10085;
+    S1[0].percentile = 9.2;
+
+  strcpy(S1[1].name,"Madhav");
+    S1[1].roll = 10092;
+    S1[1].percentile = 8.5;
+
+  strcpy(S1[2].name,"Gopal");
+    S1[2].roll = 10067;
+    S1[2].percentile = 9.9;
+
+  return 0;
+}
