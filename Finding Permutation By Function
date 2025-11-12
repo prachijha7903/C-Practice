@@ -1,0 +1,23 @@
+#include<stdio.h>
+int factorial (int x){
+    int fact = 1;
+    for(int i=1 ; i<=x ; i++){
+        fact = fact * i ;
+    }
+    return fact;
+}
+int Permutation(int n,int r){
+    int permutation = factorial(n)/ factorial(n-r) ;
+}
+int main() {
+    int n;
+    printf("Enter the total Number: ");
+    scanf("%d",&n);
+    int r;
+    printf("Enter the selected Number: ");
+    scanf("%d", &r);
+    int PermuTation = Permutation(n,r);
+    printf("The Permutation is : %d",PermuTation);
+
+    return 0;
+}
