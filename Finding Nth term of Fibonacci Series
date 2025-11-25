@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+    int n,a,b,sum;
+    printf("Enter the term whose fibonacci you want to find: ");
+    scanf("%d",&n);
+
+  a=0;
+    b=1;
+    sum = a+b;
+    for(int i=1;i<=n-2;i++){
+        a=b;
+        b=sum;
+        sum = a+b;
+        
+  }
+    printf("The %dth term of fibonacci series will be %d",n,sum);
+    return 0;
+}
