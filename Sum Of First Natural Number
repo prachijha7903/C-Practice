@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+    int n,sum;
+    printf("ENter the number upto which you want sum: ");
+    scanf("%d",&n);
+    sum=0;
+    for(int i=1;i<=n;i++){
+        sum=sum+i;
+    }
+    printf("THe sum of the first %d number will be:%d",n,sum);
+    return 0;
+}
