@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Item {
+    int code;
+    float price;
+};
+
+int main() {
+    struct Item *ptr;
+
+  ptr = (struct Item*)malloc(sizeof(struct Item));
+
+  printf("Enter item code: ");
+    scanf("%d", &ptr->code);
+
+  printf("Enter price: ");
+    scanf("%f", &ptr->price);
+
+  printf("\nItem Code: %d\n", ptr->code);
+    printf("Item Price: %.2f\n", ptr->price);
+
+  free(ptr);
+    return 0;
+}
