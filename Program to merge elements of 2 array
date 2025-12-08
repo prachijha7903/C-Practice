@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int exists(int *arr, int size, int value) {
+    for (int i = 0; i < size; i++) {
+        if (*(arr + i) == value)
+            return 1;   // value already exists
+    }
+    return 0;
+}
+
+int main() {
+    int arr1[50], arr2[50], merged[100];
+    int n1, n2, msize = 0;
+
+  printf("Enter size of first array: ");
+    scanf("%d", &n1);
+
+    printf("Enter elements of first array:\n");
+    for (int i = 0; i < n1; i++)
+
+        scanf("%d", (arr1 + i));
+
+    printf("Enter size of second array: ");
+    scanf("%d", &n2);
+
+    printf("Enter elements of second array:\n");
+    for (int i = 0; i < n2; i++)
+        scanf("%d", (arr2 + i));
+
+    // Merge first array (avoid duplicates)
+    for (int i = 0; i < n1; i++) {
+        if (!exists(merged, msize, *(arr1 + i))) {
+            *(merged + msize) = *(arr1 + i);
+            msize++;
+        }
+    }
+
+    // Merge second array (avoid duplicates)
+    for (int i = 0; i < n2; i++) {
+        if (!exists(merged, msize, *(arr2 + i))) {
+            *(merged + msize) = *(arr2 + i);
+            msize++;
+        }
+    }
+
+    printf("\nMerged Array (No Duplicates): ");
+    for (int i = 0; i < msize; i++)
+        printf("%d ", *(merged + i));
+
+    return 0;
+}
